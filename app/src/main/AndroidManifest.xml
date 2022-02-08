@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="guilherme.kunz.com.testeoracleresponsys">
+
+    <uses-permission android:name="guilherme.kunz.com.testeoracleresponsys.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <permission android:name="guilherme.kunz.com.testeoracleresponsys.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+
+    <permission android:name="guilherme.kunz.com.testeoracleresponsys.permission.PUSHIO_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="guilherme.kunz.com.testeoracleresponsys.permission.PUSHIO_MESSAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TesteOracleResponsys">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="guilherme.kunz.com.testeoracleresponsys.NOTIFICATIONPRESSED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.pushio.manager.PushIOBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action  android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="guilherme.kunz.com.testeoracleresponsys" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "464276976933",
+    "project_id": "testeoracleresponsys",
+    "storage_bucket": "testeoracleresponsys.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464276976933:android:7d7ed14edeedeb1b16d6cc",
+        "android_client_info": {
+          "package_name": "guilherme.kunz.com.testeoracleresponsys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464276976933-n0jgij25pm8ab90n8d6rs93uvm2im434.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsMsbharGItehx5RLP0vAMu1AA0LHj2Rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464276976933-n0jgij25pm8ab90n8d6rs93uvm2im434.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

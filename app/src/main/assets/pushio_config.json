@@ -1,0 +1,15 @@
+{
+  "pushio": {
+    "appName": "TesteOracleResponsys",
+    "platformName": "TesteOracleResponsys",
+    "platform_type": "gcm",
+    "apiKey": "ABEP-PgdNDSM5jsIDfl4lcMcc",
+    "apiHost": "api.pushio.com",
+    "accountToken": "ABEjnJa8Y8Y_u7o_hiMFF3kuc",
+    "conversionUrl": "http://crm.yamaha-motor.com.br/pub/cct",
+    "riAppId": "24000009"
+  },
+  "google": {
+    "projectId": "464276976933"
+  }
+}
